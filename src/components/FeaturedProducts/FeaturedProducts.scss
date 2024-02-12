@@ -1,0 +1,68 @@
+.featuredProducts{
+    margin: 100px 10px;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        h1{
+            flex: 2;
+            text-transform: capitalize;
+            margin-left: 20px;
+        }
+        p{
+            flex: 3;
+            color: gray;
+        }
+    }
+
+    .bottom{
+        display: flex;        
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+//media queries
+
+//mobile 
+@media (max-width:480px){
+    .featuredProducts{
+        .top{
+
+        }
+        .bottom{
+            flex-direction: row;
+
+        }
+    }
+}
+
+
+//tablet 
+  @media (max-width:768px){
+    .featuredProducts{
+        .top{
+
+        }
+        .bottom{
+          
+
+        }
+    }
+}
+
+
+//laptop 
+@media (max-width:1024px){
+    .featuredProducts{
+        .top{
+
+        }
+        .bottom{
+           
+        }
+    }
+}
