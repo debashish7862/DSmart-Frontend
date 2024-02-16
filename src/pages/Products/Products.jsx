@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import useFetch from "../../hooks/useFetch";
 const Products = () => {
   const catId = parseInt(useParams().id);
-  const [maxPrice, setMaxPrice] = useState(1000);
+  const [maxPrice, setMaxPrice] = useState(200000);
   const [sort, setSort] = useState(null);
 
   const [selectedSubCats, setSelectedSubCats] = useState([]);
@@ -47,7 +47,7 @@ console.log(selectedSubCats)
           <input
             type="range"
             min={0}
-            max={1000}
+            max={10000000}
             onChange={(e) => setMaxPrice(e.target.value)}
           />
           <span>{maxPrice}</span>
